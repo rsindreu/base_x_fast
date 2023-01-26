@@ -1,0 +1,13 @@
+[package]
+name = "base_x_fast"
+version = "0.2.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "base_x_fast"
+crate-type = ["cdylib"]
+
+[dependencies]
+base-x = "0.2.11"
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
